@@ -7,6 +7,7 @@ write data from redis memory to disk
 * copy the below code in above file.
 
 ```perl
+#!/usr/bin/perl
 $i = 0;
 while($i <= $ARGV[0]){
     $mydata = `redis-cli lpop $ARGV[1]`;
