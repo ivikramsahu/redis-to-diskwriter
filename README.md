@@ -4,18 +4,8 @@ write data from redis memory to disk
 
 * vim redis_to_disk_writer.pl
 
-* copy the below code in above file.
+* copy the perl code in above redis.pl file.
 
-```perl
-#!/usr/bin/perl
-$i = 0;
-while($i <= $ARGV[0]){
-    $mydata = `redis-cli lpop $ARGV[1]`;
-    $i++;
-    $data =~ s/\n/ /;
-    print "$mydata";
-}
-```
 
 * run using below command
 
